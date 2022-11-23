@@ -1,0 +1,60 @@
+/**PAGINA CONTACTO**/
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 400px) {
+    #formulario {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.leyenda_form {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.leyenda_form1 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+
+.leyenda_form2 {
+    font-size: 1.2rem;
+}
+#nombre{
+    font-size: 1.2rem;
+}
+
+#apellido{
+    font-size: 1.2rem;
+}
+
+#Contrasena{
+    font-size: 1.2rem;
+}
+
+#email{
+    font-size: 1.2rem;
+}
+
+.fondo_form {
+    
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    
+}
+
+input:focus {
+    width: 300px;
+    outline: none;
+}
+

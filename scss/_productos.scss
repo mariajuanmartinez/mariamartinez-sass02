@@ -1,0 +1,116 @@
+/**PAGINA PRODUCTOS**/
+
+#grilla_productos {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "productos productos productos productos productos"
+    "footer footer footer footer footer";
+    grid-template-columns: repeat(5, 1fr);
+    background-color: lightgray;
+}
+
+#productos {
+    grid-area: productos;
+}
+
+#productos h2,
+#productos p {
+    text-align: center;
+}
+
+.galeria_productos{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .galeria_productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .galeria_productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 523px) {
+    .galeria_productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card_prod{
+    width: 28rem;
+    height: 38rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: white;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.card_prod:hover{
+    transform: scale(1.1);
+}
+
+.card_prod img {
+    height: 18rem;
+    width: 28rem;
+}
+
+
+.card_titulo {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.card_titulo:hover{
+    transform: scale(1.2);
+}
+
+.card_precio {
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+
+.card_precio:hover{
+    transform: scale(1.3);
+}
+
+.card_desc {
+    font-size: 1.5rem;
+    
+}
+
+.card_desc:hover{
+    transform: scale(1.2);
+}
+
+.boton_prod {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+    background-color: crimson;
+    color: whitesmoke
+}
+
+.boton_prod:hover{
+    transform: scale(1.4);
+}
+
+.parrafo_tienda {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}

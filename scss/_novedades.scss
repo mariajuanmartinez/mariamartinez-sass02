@@ -1,0 +1,64 @@
+/**PAGINA NOVEDADES**/
+
+.n1 {
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    
+}
+
+.n1:hover {
+    transform: scale(0.7);
+}
+
+.tn1 {
+    font-size: 2.5rem;
+    text-align: center
+}
+
+.pn1 {
+    font-size: 1.5rem;
+}
+
+
+.n2 {
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.n2:hover {
+    transform: scale(0.7);
+}
+
+
+.in2 img {
+    border-radius: 10px;
+    width: 12rem;
+    
+}
+
+
+.in3 img {
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.tituloh2:hover {
+    transform: scale(1.5);
+
+}

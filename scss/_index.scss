@@ -1,0 +1,86 @@
+/**PAGINA INICIO**/
+
+/*Banner*/
+#banner-inicio {
+    background-color: lightblue;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    color: black;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+
+#banner-inicio h2 {
+    text-align: center;
+}
+
+.text_banner {
+    text-align: center;
+}
+
+.banners_caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner-nosotros {
+    background-color: #eaeaea;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    color: black;
+    border-radius: 8px;
+}
+
+#banner-nosotros h2 {
+    text-align: center;
+}
+
+.imagen-inicio {
+    width: 60rem;
+    height: 30rem;
+
+}
+
+.banners_caracteristicas img:hover {
+    transform: scale(1.2);
+}
+
+.parrafo_inicio {
+    font-size: 1.5rem;
+    text-align: end;
+
+}
+
+.carrusel-marcas {
+    width: 50rem;
+}
+
+
+#ubic-google {
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mapa{
+    width: 60%;
+}
+
+
+#horarios {
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 8px;
+    padding: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.titulo_ubicyhorario {
+    background-color: crimson;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
