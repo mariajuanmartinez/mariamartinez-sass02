@@ -11,9 +11,9 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-}
 
-.pasos_titulo img {
+    img {
+
     width: 12rem;
     border-radius: 10px;
     animation-name: carritomov;
@@ -21,9 +21,9 @@
     animation-timing-function: all;
     animation-duration: 5s;
     animation-delay: 1s;
-    
+    }
 }
-    
+
 @keyframes carritomov {
     0% {
         transform: translate(-80px);
@@ -33,10 +33,10 @@
     }
 }
 
-
 .pasos_titulo:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
+
 
 .pasos_titulo2 {
     display: flex;
@@ -45,11 +45,6 @@
     margin: 2rem;
     text-align: center;
     
-
-}
-
-.pasos_titulo2 {
-    transform: scale(1.2);
 }
 
 .pasos-desc {

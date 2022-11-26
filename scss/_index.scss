@@ -8,15 +8,12 @@
     color: black;
     border-radius: 8px;
     font-size: 1.5rem;
+
+    h2 {
+        text-align: center;
+    }
 }
 
-#banner-inicio h2 {
-    text-align: center;
-}
-
-.text_banner {
-    text-align: center;
-}
 
 .banners_caracteristicas {
     display: flex;
@@ -30,10 +27,10 @@
     padding: 2rem;
     color: black;
     border-radius: 8px;
-}
 
-#banner-nosotros h2 {
-    text-align: center;
+    h2 {
+        text-align: center;
+    }
 }
 
 .imagen-inicio {
@@ -42,18 +39,9 @@
 
 }
 
-.banners_caracteristicas img:hover {
-    transform: scale(1.2);
-}
-
 .parrafo_inicio {
     font-size: 1.5rem;
-    text-align: end;
 
-}
-
-.carrusel-marcas {
-    width: 50rem;
 }
 
 
@@ -81,14 +69,6 @@
     background-color: crimson;
     color: whitesmoke;
     margin-bottom: 2rem;
-}
-
-h3 {
-    text-align: center;
-}
-
-.text-center {
-    text-align: center;
 }
 
 .contenedor-opciones {

@@ -48,6 +48,14 @@ h3 {
   font-weight: bolder;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 /**HEADER*/
 #grilla_header {
   grid-area: header;
@@ -84,10 +92,6 @@ h3 {
   display: flex;
 }
 
-.ubicacion-menu {
-  justify-content: right;
-}
-
 .color-boton {
   background-color: white;
   width: 4rem;
@@ -103,14 +107,9 @@ h3 {
   background-color: gray;
   color: white;
   padding: 3rem;
-  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.footer_leyenda {
-  text-align: center;
 }
 
 .logo-footer {
@@ -118,19 +117,14 @@ h3 {
   border-radius: 8px;
 }
 
-.h3-footer {
-  text-align: center;
+.banners_caracteristicas img:hover {
+  transform: scale(1.2);
 }
 
 .texto-menu-footer {
   color: white;
   font-size: 1.4rem;
   display: flex;
-}
-
-.lista_footer {
-  text-decoration: none;
-  list-style-type: none;
 }
 
 /*Redes sociales*/
@@ -165,12 +159,7 @@ h3 {
   border-radius: 8px;
   font-size: 1.5rem;
 }
-
 #banner-inicio h2 {
-  text-align: center;
-}
-
-.text_banner {
   text-align: center;
 }
 
@@ -187,7 +176,6 @@ h3 {
   color: black;
   border-radius: 8px;
 }
-
 #banner-nosotros h2 {
   text-align: center;
 }
@@ -197,17 +185,8 @@ h3 {
   height: 30rem;
 }
 
-.banners_caracteristicas img:hover {
-  transform: scale(1.2);
-}
-
 .parrafo_inicio {
   font-size: 1.5rem;
-  text-align: end;
-}
-
-.carrusel-marcas {
-  width: 50rem;
 }
 
 #ubic-google {
@@ -232,14 +211,6 @@ h3 {
   background-color: crimson;
   color: whitesmoke;
   margin-bottom: 2rem;
-}
-
-h3 {
-  text-align: center;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .contenedor-opciones {
@@ -305,11 +276,6 @@ h3 {
   grid-area: productos;
 }
 
-#productos h2,
-#productos p {
-  text-align: center;
-}
-
 .galeria_productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -346,14 +312,13 @@ h3 {
   margin: 1rem;
   justify-content: center;
 }
-
-.card_prod:hover {
-  transform: scale(1.1);
-}
-
 .card_prod img {
   height: 18rem;
   width: 28rem;
+}
+
+.card_prod:hover {
+  transform: scale(1.1);
 }
 
 .card_titulo {
@@ -424,23 +389,6 @@ h3 {
 
 .pn1 {
   font-size: 1.5rem;
-}
-
-.n2 {
-  border-radius: 10px;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.n2:hover {
-  transform: scale(0.7);
 }
 
 .in2 img {
@@ -526,7 +474,6 @@ input:focus {
   align-items: center;
   padding: 1rem;
 }
-
 .pasos_titulo img {
   width: 12rem;
   border-radius: 10px;
@@ -546,7 +493,7 @@ input:focus {
   }
 }
 .pasos_titulo:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .pasos_titulo2 {
@@ -555,10 +502,6 @@ input:focus {
   align-items: center;
   margin: 2rem;
   text-align: center;
-}
-
-.pasos_titulo2 {
-  transform: scale(1.2);
 }
 
 .pasos-desc {
