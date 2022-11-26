@@ -2,27 +2,26 @@
 #grilla_header {
     grid-area: header;
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: calc($separacion - 6rem);
     background-color: crimson;
 } 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: $pantalla-mediana) {
     #grilla_header {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 523px) {
+@media screen and (max-width: $pantalla-chica) {
     #lista_navegacion {
         flex-direction: column;
     }
 }
 
 .logo {
-    width: 10rem;
-    height: 10rem;
+    @include sizes (10rem, 10rem);
     border-radius: 8px;
-    margin-right: 2rem;
+    margin-right: calc($separacion / 5);
 }
 
 
@@ -39,14 +38,13 @@
 
 .color-boton {
     background-color: white;
-    width: 4rem;
-    height: 4rem;
+    @include sizes (4rem, 4rem);
 }
 
 /**FOOTER**/
 #footer {
     grid-area: footer;
-    margin-top: 4rem;
+    margin-top: calc($separacion - 6rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     background-color: gray;
@@ -59,7 +57,7 @@
 
 
 .logo-footer {
-    width: 14rem;
+    @include sizes (14rem, 14rem);
     border-radius: 8px;
 }
 
@@ -79,11 +77,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: calc($separacion - 7rem);
 }
 
 .img_redes {
-    width: 2rem;
+    @include sizes (2rem, 2rem);
 }
 
 /*Banner*/

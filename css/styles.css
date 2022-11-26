@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*Variable para colores y fuentes*/
+/*Variable para mediaquerys*/
+/*Mixins*/
+/*Mixins con parámetros*/
+/*Operaciones*/
+/*Variable para promociones especiales*/
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +45,7 @@ h1:hover {
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bolder;
 }
 
@@ -54,6 +61,36 @@ a {
 
 ul {
   list-style: none;
+}
+
+/*Body con variables*/
+/*Condicionales*/
+body {
+  background-color: lightblue;
+}
+
+/*EXTENDS*/
+.botones-general, .boton_prod, .contenedor-labels label, .boton-saber {
+  color: whitesmoke;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/*BUCLES*/
+.leyenda-3 {
+  font-size: 2.7rem;
+}
+
+.leyenda-2 {
+  font-size: 1.8rem;
+}
+
+.leyenda-1 {
+  font-size: 0.9rem;
 }
 
 /**HEADER*/
@@ -114,6 +151,7 @@ ul {
 
 .logo-footer {
   width: 14rem;
+  height: 14rem;
   border-radius: 8px;
 }
 
@@ -138,6 +176,7 @@ ul {
 
 .img_redes {
   width: 2rem;
+  height: 2rem;
 }
 
 /*Banner*/
@@ -226,25 +265,12 @@ ul {
 
 .boton-saber {
   background-color: crimson;
-  color: whitesmoke;
-  padding: 5px 15px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.5rem;
 }
 
 .contenedor-labels label {
-  background-color: gray;
-  color: whitesmoke;
-  padding: 5px 15px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  cursor: pointer;
-  font-size: 1.5rem;
+  background-color: gray;
 }
 
 .contenedor-botones a {
@@ -269,7 +295,6 @@ ul {
   display: grid;
   grid-template-areas: "header header header header header" "productos productos productos productos productos" "footer footer footer footer footer";
   grid-template-columns: repeat(5, 1fr);
-  background-color: lightgray;
 }
 
 #productos {
@@ -301,20 +326,20 @@ ul {
   }
 }
 .card_prod {
-  width: 28rem;
-  height: 38rem;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 28rem;
+  height: 38rem;
+  border-radius: 20px;
   padding: 1.5rem;
   background-color: white;
   margin: 1rem;
   justify-content: center;
 }
 .card_prod img {
-  height: 18rem;
   width: 28rem;
+  height: 18rem;
 }
 
 .card_prod:hover {
@@ -322,7 +347,7 @@ ul {
 }
 
 .card_titulo {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bolder;
 }
 
@@ -348,11 +373,7 @@ ul {
 }
 
 .boton_prod {
-  font-size: 1.2rem;
-  padding: 0.8rem;
-  border-radius: 20px;
   background-color: crimson;
-  color: whitesmoke;
 }
 
 .boton_prod:hover {
@@ -366,12 +387,12 @@ ul {
 
 /**PAGINA NOVEDADES**/
 .n1 {
-  border-radius: 10px;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  padding: 2rem;
+  justify-content: center;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -394,11 +415,13 @@ ul {
 .in2 img {
   border-radius: 10px;
   width: 12rem;
+  height: 12rem;
 }
 
 .in3 img {
   border-radius: 10px;
   width: 20rem;
+  height: 20rem;
 }
 
 .tituloh2:hover {
@@ -476,6 +499,7 @@ input:focus {
 }
 .pasos_titulo img {
   width: 12rem;
+  height: 12rem;
   border-radius: 10px;
   animation-name: carritomov;
   animation-iteration-count: infinite;
@@ -498,7 +522,7 @@ input:focus {
 
 .pasos_titulo2 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin: 2rem;
   text-align: center;

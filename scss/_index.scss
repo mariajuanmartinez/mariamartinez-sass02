@@ -3,11 +3,11 @@
 /*Banner*/
 #banner-inicio {
     background-color: lightblue;
-    margin-top: 1.5rem;
+    margin-top: calc($separacion - 8.5rem);
     padding: 2rem;
     color: black;
     border-radius: 8px;
-    font-size: 1.5rem;
+    font-size: $fuente-chica;
 
     h2 {
         text-align: center;
@@ -16,14 +16,13 @@
 
 
 .banners_caracteristicas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
+
 }
 
 #banner-nosotros {
     background-color: #eaeaea;
-    margin-top: 1.5rem;
+    margin-top: calc($separacion - 8.5rem);
     padding: 2rem;
     color: black;
     border-radius: 8px;
@@ -34,19 +33,18 @@
 }
 
 .imagen-inicio {
-    width: 60rem;
-    height: 30rem;
+    @include sizes (60rem, 30rem);
 
 }
 
 .parrafo_inicio {
-    font-size: 1.5rem;
+    font-size: $fuente-chica;
 
 }
 
 
 #ubic-google {
-    margin-top: 2rem;
+    margin-top: calc($separacion - 8rem);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -59,23 +57,20 @@
 
 #horarios {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: calc($separacion - 8rem);
     border-radius: 8px;
-    font-size: 1.5rem;
+    font-size: $fuente-chica;
 
 }
 
 .titulo_ubicyhorario {
     background-color: crimson;
     color: whitesmoke;
-    margin-bottom: 2rem;
+    margin-bottom: calc($separacion - 8rem);
 }
 
 .contenedor-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    @include flex-column-center;
 }
 
 .contenedor-labels {
@@ -84,26 +79,15 @@
 }
 
 .boton-saber {
+    @extend .botones-general;
     background-color: crimson;
-    color: whitesmoke;
-    padding: 5px 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
 }
 
 .contenedor-labels label {
+    @extend .botones-general;
+    margin-top: calc($separacion - 9rem);
+    margin-bottom: calc($separacion - 9rem);
     background-color: gray;
-    color: whitesmoke;
-    padding: 5px 15px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
-    font-size: 1.5rem;
 }
 
 .contenedor-botones a {

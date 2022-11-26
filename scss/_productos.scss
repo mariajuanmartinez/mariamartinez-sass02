@@ -7,7 +7,6 @@
     "productos productos productos productos productos"
     "footer footer footer footer footer";
     grid-template-columns: repeat(5, 1fr);
-    background-color: lightgray;
 }
 
 #productos {
@@ -23,41 +22,36 @@
     justify-items: center;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: $pantalla-grande) {
     .galeria_productos {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: $pantalla-mediana) {
     .galeria_productos {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 523px) {
+@media screen and (max-width: $pantalla-chica) {
     .galeria_productos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center;
     }
 }
 
 .card_prod{
-    width: 28rem;
-    height: 38rem;
+    @include flex-column-center;
+    @include sizes (28rem, 38rem);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 1.5rem;
     background-color: white;
-    margin: 1rem;
+    margin: calc($separacion - 9rem);
     justify-content: center;
 
     img {
-        height: 18rem;
-        width: 28rem;
+    @include sizes (28rem, 18rem);
+
     }
 }
 
@@ -67,7 +61,7 @@
 
 
 .card_titulo {
-    font-size: 1.8rem;
+    font-size: $fuente-mediana;
     font-weight: bolder;
 }
 
@@ -86,7 +80,7 @@
 }
 
 .card_desc {
-    font-size: 1.5rem;
+    font-size: $fuente-chica;
     
 }
 
@@ -95,11 +89,8 @@
 }
 
 .boton_prod {
-    font-size: 1.2rem;
-    padding: 0.8rem;
-    border-radius: 20px;
+    @extend .botones-general;
     background-color: crimson;
-    color: whitesmoke
 }
 
 .boton_prod:hover{
@@ -107,6 +98,6 @@
 }
 
 .parrafo_tienda {
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
+    font-size: $fuente-grande;
+    margin-bottom: calc($separacion - 6rem);
 }

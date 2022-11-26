@@ -14,7 +14,7 @@ img {
 
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
+    font-size: $fuente-mediana;
     font-weight: bolder;
     background-color: lightgray;
     padding: 1.2rem;
@@ -40,13 +40,13 @@ h1:hover {
 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5rem;
+    font-size: $fuente-mediana;
     font-weight: bolder;
 }
 
 h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: $fuente-chica;
     font-weight: bolder;
 }
 
@@ -58,3 +58,40 @@ ul {
     list-style: none;
 }
 
+/*Body con variables*/
+/*Condicionales*/
+
+body {
+    @if $evento == blackfriday{
+        background-color: black;
+        color: whitesmoke;
+    } @else if $evento == hotsale{
+        background-color: orangered;
+    } @else if $evento == mundial{
+        background-color: lightblue;
+    } @else if $evento == navidad{
+        background-color: red;
+    } @else{
+        background-color: $bg-body;
+    }
+}
+
+/*EXTENDS*/
+
+.botones-general {
+    color: whitesmoke;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    font-size: $fuente-chica;
+}
+
+/*BUCLES*/
+
+@for $i from 3 through 1 {
+    .leyenda-#{$i}{
+        font-size: $fuente-xxchica * $i;
+    }
+}
