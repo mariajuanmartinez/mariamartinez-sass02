@@ -70,9 +70,9 @@ body {
 }
 
 /*EXTENDS*/
-.botones-general, .boton_prod, .contenedor-labels label, .boton-saber {
+.botones-general, .botoncod, .botoncopiar, .boton_prod, .contenedor-labels label, .boton-saber, .btn--sendmail, .btn--whatsapp, .btn--twiter, .btn--facebook, .btn--instagram {
   color: whitesmoke;
-  padding: 5px 15px;
+  padding: 0.5rem;
   border-radius: 10px;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -91,6 +91,40 @@ body {
 
 .leyenda-1 {
   font-size: 0.9rem;
+}
+
+/*MAPA*/
+/*Each y mapa*/
+.btn--instagram {
+  background-color: #953a7e;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--twiter {
+  background-color: #55acee;
+}
+
+.btn--whatsapp {
+  background-color: #3d953a;
+}
+
+.btn--sendmail {
+  background-color: #C25E30;
+}
+
+/*Map get*/
+.clase-referencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(238, 51, 51);
+  font-size: 2.5rem;
+  border-radius: 8px;
+  color: white;
+  padding: 1rem;
 }
 
 /**HEADER*/
@@ -482,6 +516,34 @@ body {
 input:focus {
   width: 300px;
   outline: none;
+}
+
+.contenedor-form {
+  margin: 5rem;
+}
+
+.contenedor-each-maps {
+  margin: 5rem;
+}
+
+.botoncod:hover {
+  transform: scale(0.7);
+}
+
+.botoncopiar:hover {
+  transform: scale(0.7);
+}
+
+.hover-each:hover {
+  transform: scale(0.7);
+}
+
+.parraforef {
+  font-size: 1.5rem;
+}
+
+.parraforef2 {
+  font-size: 1.2rem;
 }
 
 /**PAGINA COMO COMPRAR**/

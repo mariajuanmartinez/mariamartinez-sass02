@@ -56,68 +56,93 @@
 
     <section id="formulario" class="borde_formulario">
         
-        <div class>
-            <div class>
-                <form>
-                    <fieldset class="fondo_form">
-                    <legend class="leyenda_form">FORMULARIO DE CONTACTO</legend>
-                    <p class="leyenda_form1">Datos personales</p>
-                    <div class="d-flex justify-content-center">
-                        <label for="nombre"></label>
-                        <input type="text" id="nombre" required placeholder="Nombre">
+        <div class="container">
+            <div class= "row d-flex justify-content-center">
+                <div class="contenedor-form col-6 col-md-4">
+                    <form>
+                        <fieldset class="fondo_form">
+                        <legend class="leyenda_form">FORMULARIO DE CONTACTO</legend>
+                        <p class="leyenda_form1">Datos personales</p>
+                        <div class="d-flex justify-content-center">
+                            <label for="nombre"></label>
+                            <input type="text" id="nombre" required placeholder="Nombre">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <label for="apellido"></label>
+                            <input type="text" id="apellido" required placeholder="Apellido">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <label for="email"></label>
+                            <input type="email" id="email" required placeholder="Correo electrónico">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <label for="Contrasena"></label>
+                            <input type="password" id="Contrasena" required placeholder="Contraseña">
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="leyenda_form1">Indica la ubicacion de tu local</p>
+                            <label for="cbacap" class="leyenda_form2">Cba capital</label>
+                            <input type="radio" name="ubicacion" id="cbacap">
+                            <label for="intcba" class="leyenda_form2">Interior de Cba</label>
+                            <input type="radio" name="ubicacion" id="intcba">
+                            <label for="restopais" class="leyenda_form2">Resto del país</label>
+                            <input type="radio" name="ubicacion" id="restopais">
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="leyenda_form1">Indica preferencia de entrega</p>
+                            <label for="directodom" class="leyenda_form2">Directo a tu domilicio</label>
+                            <input type="checkbox" id="directodom">
+                            <label for="retirodecorreo" class="leyenda_form2">Retiro de correo cercano</label>
+                            <input type="checkbox" id="retirodecorreo">
+                            <label for="retirovenderia" class="leyenda_form2">Retiro en LA VENDERIA</label>
+                            <input type="checkbox" id="retirovenderia">
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="leyenda_form1">¿Deseas recibir nuestro catálogo actualizado?</p>
+                            <label for="select" class="leyenda_form2">Selecciona una opción</label>
+                            <select id="select">
+                            <option class="leyenda_form2">si</option>
+                            <option class="leyenda_form2">no</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="leyenda_form1">Nos interesa tu consulta, dejanos tu mensaje:</p>
+                            <textarea id="mensaje" cols="60" rows="10" maxlength="10" class="col-12 col-md-12 col-lg-12"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar formulario" class="leyenda_form2">
+                            <input type="reset" value="Limpiar Formulario" class="leyenda_form2">
+                        </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="contenedor-each-maps col-6 col-md-4">
+                    <h2 class="clase-referencia">¡Recomendanos y gana!</h2>
+                    <p class="parraforef mt-5">Suma puntos referenciando a alguien que se convierta en nuestro cliente y accede a descuentos y promociones únicas.</p>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center col-6 col-md-6 col-lg-6">
+                            <div class="botoncod text-center bg-secondary text-center mt-4 mb-2">tu código</div>
+                            <div class="botoncopiar ext-center bg-danger text-center mb-4">COPIAR</div>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <label for="apellido"></label>
-                        <input type="text" id="apellido" required placeholder="Apellido">
+                    <P class="parraforef mt-4 mb-4">Comparte tu código en las siguientes redes:</P>
+                    <div class="container">
+                        <div class="row col-6">      
+                            <button class="btn--instagram mb-2 hover-each">instagram</button>
+                            <button class="btn--facebook mb-2 hover-each">facebook</button>
+                            <button class="btn--twiter mb-2 hover-each">twitter</button>
+                            <button class="btn--whatsapp mb-2 hover-each">whatsapp</button>
+                            <button class="btn--sendmail mb-2 hover-each">send-mail</button>
+                        </div>
+                            <p class="parraforef2 m-4">(*)Si alguien se registra indicando tu código, tendrás un descuento del 20% en tu próxima compra.</p>
+                        
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <label for="email"></label>
-                        <input type="email" id="email" required placeholder="Correo electrónico">
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <label for="Contrasena"></label>
-                        <input type="password" id="Contrasena" required placeholder="Contraseña">
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="leyenda_form1">Indica la ubicacion de tu local</p>
-                        <label for="cbacap" class="leyenda_form2">Cba capital</label>
-                        <input type="radio" name="ubicacion" id="cbacap">
-                        <label for="intcba" class="leyenda_form2">Interior de Cba</label>
-                        <input type="radio" name="ubicacion" id="intcba">
-                        <label for="restopais" class="leyenda_form2">Resto del país</label>
-                        <input type="radio" name="ubicacion" id="restopais">
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="leyenda_form1">Indica preferencia de entrega</p>
-                        <label for="directodom" class="leyenda_form2">Directo a tu domilicio</label>
-                        <input type="checkbox" id="directodom">
-                        <label for="retirodecorreo" class="leyenda_form2">Retiro de correo cercano</label>
-                        <input type="checkbox" id="retirodecorreo">
-                        <label for="retirovenderia" class="leyenda_form2">Retiro en LA VENDERIA</label>
-                        <input type="checkbox" id="retirovenderia">
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="leyenda_form1">¿Deseas recibir nuestro catálogo actualizado?</p>
-                        <label for="select" class="leyenda_form2">Selecciona una opción</label>
-                        <select id="select">
-                        <option class="leyenda_form2">si</option>
-                        <option class="leyenda_form2">no</option>
-                        </select>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="leyenda_form1">Nos interesa tu consulta, dejanos tu mensaje:</p>
-                        <textarea id="mensaje" cols="60" rows="10" maxlength="10" class="col-12 col-md-12 col-lg-12"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar formulario" class="leyenda_form2">
-                        <input type="reset" value="Limpiar Formulario" class="leyenda_form2">
-                    </div>
-                    </fieldset>
-                </form>
+
+                </div>
             </div>
         </div>
 

@@ -56,3 +56,37 @@ input:focus {
     outline: none;
 }
 
+.contenedor-form {
+    margin: calc($separacion / 2);
+    
+}
+
+.contenedor-each-maps {
+    margin: calc($separacion / 2);
+}
+
+
+.botoncod, .botoncopiar {
+    @extend .botones-general;
+
+}
+
+.botoncod:hover {
+    transform: scale(0.7);
+}
+
+.botoncopiar:hover {
+    transform: scale(0.7);
+}
+
+.hover-each:hover {
+    transform: scale(0.7);
+}
+
+.parraforef {
+    font-size: $fuente-chica;
+}
+
+.parraforef2 {
+    font-size: $fuente-xchica;
+}

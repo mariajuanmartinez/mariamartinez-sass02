@@ -80,7 +80,7 @@ body {
 
 .botones-general {
     color: whitesmoke;
-    padding: 5px 15px;
+    padding: 0.5rem;
     border-radius: 10px;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -95,3 +95,44 @@ body {
         font-size: $fuente-xxchica * $i;
     }
 }
+
+/*MAPA*/
+
+$redes-sociales: (
+    instagram: #953a7e,
+    facebook: #3a5795,
+    twiter: #55acee,
+    whatsapp: #3d953a,
+    sendmail: #C25E30,
+);
+
+/*Each y mapa*/
+
+@each $red-social, $color in $redes-sociales {
+    .btn--#{$red-social} {
+        background-color: $color;
+        @extend .botones-general;
+    }
+} 
+
+/*Map get*/
+
+$estilos: (
+    color: rgb(238, 51, 51),
+    alineado: center,
+    tamañofuente: $fuente-grande,
+    tipofuente: Verdana,
+    borde: 8px,
+    color-fuente: white,
+    padding: 1rem
+);
+
+.clase-referencia {
+    @include flex-column-center;
+    background-color: map-get($estilos, color);
+    font-size: map-get($estilos, tamañofuente);
+    border-radius: map-get($estilos, borde);
+    color: map-get($estilos, color-fuente);
+    padding: map-get($estilos, padding);
+}
+
