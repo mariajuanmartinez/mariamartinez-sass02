@@ -121,7 +121,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgb(238, 51, 51);
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-radius: 8px;
   color: white;
   padding: 1rem;
@@ -463,19 +463,6 @@ body {
 }
 
 /**PAGINA CONTACTO**/
-#formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media screen and (max-width: 400px) {
-  #formulario {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
 .leyenda_form {
   font-size: 2rem;
   font-weight: bold;

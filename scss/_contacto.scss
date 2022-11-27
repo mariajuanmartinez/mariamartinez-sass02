@@ -1,18 +1,5 @@
 /**PAGINA CONTACTO**/
 
-#formulario {
-    @include flex-column-center;
-}
-
-
-@media screen and (max-width: $pantalla-xs) {
-    #formulario {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
 .leyenda_form {
     font-size: $fuente-mediana;
     font-weight: bold;

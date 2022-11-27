@@ -37,6 +37,7 @@
 @media screen and (max-width: $pantalla-chica) {
     .galeria_productos {
         @include flex-column-center;
+        
     }
 }
 
