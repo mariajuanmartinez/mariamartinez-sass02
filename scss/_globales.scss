@@ -23,6 +23,10 @@ h1{
     animation-duration: 2s;
     animation-name: aparecer;
 
+    &:hover{
+        transform: scale(1.1);
+    }
+
 }
 
 @keyframes aparecer {
@@ -34,9 +38,7 @@ h1{
     }
 }
 
-h1:hover {
-    transform: scale(1.2);
-}
+
 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;

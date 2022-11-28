@@ -22,6 +22,7 @@
     justify-items: center;
 }
 
+
 @media screen and (max-width: $pantalla-grande) {
     .galeria_productos {
         grid-template-columns: repeat(3, 1fr);
@@ -50,53 +51,56 @@
     margin: calc($separacion - 9rem);
     justify-content: center;
 
+    &:hover{
+        transform: scale(1.1);
+    }
+
     img {
     @include sizes (28rem, 18rem);
 
     }
 }
 
-.card_prod:hover{
-    transform: scale(1.1);
-}
-
 
 .card_titulo {
     font-size: $fuente-mediana;
     font-weight: bolder;
+
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
-.card_titulo:hover{
-    transform: scale(1.2);
-}
 
 .card_precio {
     font-size: 3rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+    &:hover {
+        transform: scale(1.3);
+    }
 }
 
-.card_precio:hover{
-    transform: scale(1.3);
-}
 
 .card_desc {
     font-size: $fuente-chica;
+
+    &:hover{
+        transform: scale(1.2);
+    }
     
 }
 
-.card_desc:hover{
-    transform: scale(1.2);
-}
 
 .boton_prod {
     @extend .botones-general;
     background-color: crimson;
+
+    &:hover{
+        transform: scale(1.4);
+    }
 }
 
-.boton_prod:hover{
-    transform: scale(1.4);
-}
 
 .parrafo_tienda {
     font-size: $fuente-grande;

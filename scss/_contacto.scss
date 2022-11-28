@@ -56,17 +56,13 @@ input:focus {
 .botoncod, .botoncopiar {
     @extend .botones-general;
 
+    &:hover{
+        transform: scale(0.7);
+    }
 }
 
-.botoncod:hover {
-    transform: scale(0.7);
-}
 
-.botoncopiar:hover {
-    transform: scale(0.7);
-}
-
-.hover-each:hover {
+.efecto-each:hover {
     transform: scale(0.7);
 }
 

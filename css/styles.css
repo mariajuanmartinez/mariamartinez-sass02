@@ -30,6 +30,9 @@ h1 {
   animation-duration: 2s;
   animation-name: aparecer;
 }
+h1:hover {
+  transform: scale(1.1);
+}
 
 @keyframes aparecer {
   0% {
@@ -39,10 +42,6 @@ h1 {
     opacity: 1;
   }
 }
-h1:hover {
-  transform: scale(1.2);
-}
-
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
@@ -151,7 +150,6 @@ body {
   border-radius: 8px;
   margin-right: 2rem;
 }
-
 .logo:hover {
   transform: scale(1.2);
 }
@@ -188,8 +186,7 @@ body {
   height: 14rem;
   border-radius: 8px;
 }
-
-.banners_caracteristicas img:hover {
+.logo-footer:hover {
   transform: scale(1.2);
 }
 
@@ -240,6 +237,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.banners_caracteristicas img:hover {
+  transform: scale(1.08);
 }
 
 #banner-nosotros {
@@ -371,20 +372,18 @@ body {
   margin: 1rem;
   justify-content: center;
 }
+.card_prod:hover {
+  transform: scale(1.1);
+}
 .card_prod img {
   width: 28rem;
   height: 18rem;
-}
-
-.card_prod:hover {
-  transform: scale(1.1);
 }
 
 .card_titulo {
   font-size: 2rem;
   font-weight: bolder;
 }
-
 .card_titulo:hover {
   transform: scale(1.2);
 }
@@ -393,7 +392,6 @@ body {
   font-size: 3rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-
 .card_precio:hover {
   transform: scale(1.3);
 }
@@ -401,7 +399,6 @@ body {
 .card_desc {
   font-size: 1.5rem;
 }
-
 .card_desc:hover {
   transform: scale(1.2);
 }
@@ -409,7 +406,6 @@ body {
 .boton_prod {
   background-color: crimson;
 }
-
 .boton_prod:hover {
   transform: scale(1.4);
 }
@@ -432,7 +428,6 @@ body {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
-
 .n1:hover {
   transform: scale(0.7);
 }
@@ -456,10 +451,6 @@ body {
   border-radius: 10px;
   width: 20rem;
   height: 20rem;
-}
-
-.tituloh2:hover {
-  transform: scale(1.5);
 }
 
 /**PAGINA CONTACTO**/
@@ -513,15 +504,11 @@ input:focus {
   margin: 5rem;
 }
 
-.botoncod:hover {
+.botoncod:hover, .botoncopiar:hover {
   transform: scale(0.7);
 }
 
-.botoncopiar:hover {
-  transform: scale(0.7);
-}
-
-.hover-each:hover {
+.efecto-each:hover {
   transform: scale(0.7);
 }
 
@@ -546,6 +533,9 @@ input:focus {
   align-items: center;
   padding: 1rem;
 }
+.pasos_titulo:hover {
+  transform: scale(1.2);
+}
 .pasos_titulo img {
   width: 12rem;
   height: 12rem;
@@ -565,10 +555,6 @@ input:focus {
     transform: translate(80px);
   }
 }
-.pasos_titulo:hover {
-  transform: scale(1.2);
-}
-
 .pasos_titulo2 {
   display: flex;
   flex-direction: column;
@@ -595,7 +581,6 @@ input:focus {
   border-radius: 10px;
   padding: 2.5rem;
 }
-
 .pasos-desc-fin:hover {
   transform: scale(1.1);
 }
@@ -608,7 +593,6 @@ input:focus {
   color: goldenrod;
   border-radius: 100px;
 }
-
 .pasos_num:hover {
   transform: scale(1.1);
 }

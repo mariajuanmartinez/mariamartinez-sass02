@@ -17,8 +17,14 @@
 
 .banners_caracteristicas {
     @include flex-column-center;
+    
+    }
 
+
+.banners_caracteristicas img:hover {
+    transform: scale(1.08);
 }
+
 
 #banner-nosotros {
     background-color: #eaeaea;

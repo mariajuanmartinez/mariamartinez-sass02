@@ -12,6 +12,10 @@
     align-items: center;
     padding: 1rem;
 
+    &:hover {
+        transform: scale(1.2);
+    }
+
     img {
 
     @include sizes (12rem, 12rem);
@@ -31,10 +35,6 @@
     100% {
         transform: translate(80px);
     }
-}
-
-.pasos_titulo:hover {
-    transform: scale(1.2);
 }
 
 
@@ -63,10 +63,10 @@
     background-color: gold;
     border-radius: 10px;
     padding: 2.5rem;
-}
 
-.pasos-desc-fin:hover {
-    transform: scale(1.1);
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 
@@ -78,8 +78,10 @@
     color: goldenrod;
     border-radius: 100px;
 
+    &:hover{
+        transform: scale(1.1);
+    }
+
 }
 
-.pasos_num:hover {
-    transform: scale(1.1);
-}
+

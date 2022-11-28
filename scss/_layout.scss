@@ -22,11 +22,11 @@
     @include sizes (10rem, 10rem);
     border-radius: 8px;
     margin-right: calc($separacion / 5);
-}
 
+    &:hover{
+        transform: scale(1.2);
+    }
 
-.logo:hover {
-    transform: scale(1.2);
 }
 
 .texto-menu {
@@ -59,11 +59,13 @@
 .logo-footer {
     @include sizes (14rem, 14rem);
     border-radius: 8px;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
 }
 
-.banners_caracteristicas img:hover {
-    transform: scale(1.2);
-}
 
 .texto-menu-footer {
     color: white;

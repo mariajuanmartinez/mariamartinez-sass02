@@ -10,11 +10,11 @@
     margin-bottom: calc($separacion - 9.5rem);
     margin-top: calc($separacion - 9.5rem);
     
+    &:hover{
+        transform: scale(0.7);
+    }
 }
 
-.n1:hover {
-    transform: scale(0.7);
-}
 
 .tn1 {
     font-size: $fuente-grande;
@@ -38,7 +38,3 @@
     @include sizes (20rem, 20rem);
 }
 
-.tituloh2:hover {
-    transform: scale(1.5);
-
-}
