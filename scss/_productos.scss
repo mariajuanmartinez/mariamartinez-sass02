@@ -61,7 +61,6 @@
     }
 }
 
-
 .card_titulo {
     font-size: $fuente-mediana;
     font-weight: bolder;
@@ -70,7 +69,6 @@
         transform: scale(1.2);
     }
 }
-
 
 .card_precio {
     font-size: 3rem;
@@ -81,7 +79,6 @@
     }
 }
 
-
 .card_desc {
     font-size: $fuente-chica;
 
@@ -91,7 +88,6 @@
     
 }
 
-
 .boton_prod {
     @extend .botones-general;
     background-color: crimson;
@@ -100,7 +96,6 @@
         transform: scale(1.4);
     }
 }
-
 
 .parrafo_tienda {
     font-size: $fuente-grande;

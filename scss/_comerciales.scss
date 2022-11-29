@@ -37,7 +37,6 @@
     }
 }
 
-
 .pasos_titulo2 {
     @include flex-column-center;
     margin: calc($separacion - 8rem);
@@ -52,7 +51,6 @@
     justify-items: center;
     font-size: $fuente-chica;
 }
-
 
 .pasos-desc-fin {
     text-align: end;
@@ -69,7 +67,6 @@
     }
 }
 
-
 .pasos_num {
     display: flex;
     justify-content: center;
@@ -77,11 +74,9 @@
     font-size: 5rem;
     color: goldenrod;
     border-radius: 100px;
-
     &:hover{
         transform: scale(1.1);
     }
-
 }
 
 

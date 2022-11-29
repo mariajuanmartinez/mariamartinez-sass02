@@ -14,17 +14,14 @@
     }
 }
 
-
 .banners_caracteristicas {
     @include flex-column-center;
     
     }
 
-
 .banners_caracteristicas img:hover {
     transform: scale(1.08);
 }
-
 
 #banner-nosotros {
     background-color: #eaeaea;
@@ -40,14 +37,12 @@
 
 .imagen-inicio {
     @include sizes (60rem, 30rem);
-
 }
 
 .parrafo_inicio {
     font-size: $fuente-chica;
 
 }
-
 
 #ubic-google {
     margin-top: calc($separacion - 8rem);
@@ -60,13 +55,11 @@
     width: 60%;
 }
 
-
 #horarios {
     text-align: center;
     margin-top: calc($separacion - 8rem);
     border-radius: 8px;
     font-size: $fuente-chica;
-
 }
 
 .titulo_ubicyhorario {
@@ -100,12 +93,10 @@
     display: none;
 }
 
-
 #sitio-web,
 #whatsapp {
     display: none;
 }
-
 
 #sitio-web:checked ~ .contenedor-botones .web{
     display: block;

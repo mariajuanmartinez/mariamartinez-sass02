@@ -15,7 +15,6 @@
     }
 }
 
-
 .tn1 {
     font-size: $fuente-grande;
     text-align: center
@@ -25,13 +24,11 @@
     font-size: $fuente-chica;
 }
 
-
 .in2 img {
     border-radius: 10px;
     @include sizes (12rem, 12rem);
     
 }
-
 
 .in3 img {
     border-radius: 10px;

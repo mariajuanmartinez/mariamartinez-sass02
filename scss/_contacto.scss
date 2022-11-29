@@ -52,7 +52,6 @@ input:focus {
     margin: calc($separacion / 2);
 }
 
-
 .botoncod, .botoncopiar {
     @extend .botones-general;
 
@@ -60,7 +59,6 @@ input:focus {
         transform: scale(0.7);
     }
 }
-
 
 .efecto-each:hover {
     transform: scale(0.7);
