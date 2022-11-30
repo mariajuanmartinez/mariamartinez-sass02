@@ -520,6 +520,10 @@ input:focus {
   font-size: 1.2rem;
 }
 
+.funcional {
+  background-color: red;
+}
+
 /**PAGINA COMO COMPRAR**/
 .pasos_titulo {
   background-color: crimson;
